@@ -15,7 +15,7 @@ class OstrichProject(info: ProjectInfo) extends StandardLibraryProject(info)
   val util    = "com.twitter" %% "util-core"    % UtilVersion
   val eval    = "com.twitter" %% "util-eval"    % UtilVersion
   val logging = "com.twitter" %% "util-logging" % UtilVersion
-  val json    = "com.twitter" %% "json"         % "2.1.6"
+  val json    = "com.twitter" %% "json"         % "2.1.7-custom"
 
   val SpecsVersion = buildScalaVersion match {
     case "2.8.1" => "1.6.8"
