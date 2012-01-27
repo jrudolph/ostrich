@@ -9,12 +9,12 @@ import org.specs.util.TimeConversions._
 object JsonStatsFetcherSpec extends Specification {
   def exec(args: String*) = Runtime.getRuntime.exec(args.toArray)
 
-  val hasRuby = try {
+  val hasRuby = false/*try {
     exec("ruby", "--version")
     true
   } catch {
     case e: Throwable => false
-  }
+  }*/
 
   if (hasRuby) {
     "json_stats_fetcher.rb" should {
