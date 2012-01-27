@@ -54,6 +54,8 @@ class OstrichProject(info: ProjectInfo) extends StandardLibraryProject(info)
 
   override def subversionRepository = Some("https://svn.twitter.biz/maven-public")
 
+  override def disableCrossPaths = false
+
   // We depend on the stuff in the scripts directory to run tests in an
   // invocation-path independent manner.
   override def testResources =
